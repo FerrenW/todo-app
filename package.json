@@ -2,13 +2,18 @@
   "name": "backend-todoapp",
   "version": "0.0.1",
   "description": "This is the backend for the todo app",
-  "main": "app.js",
+  "main": "app.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/index.mjs"
   },
   "author": "Lucas Benedetti",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "type": "module"
 }
